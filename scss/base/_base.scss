@@ -1,0 +1,44 @@
+body {
+	font-family: 'YS Text', sans-serif;
+	font-weight: 500;
+	font-size: 24px;
+	background-image: url('img/og.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+a {
+	// color: $grayscale-00;
+	// font-size: $B1_Medium_16;
+	font-weight: 500;
+	cursor: pointer;
+
+	&:active,
+	:focus {
+		// color: $grayscale-07;
+	}
+}
+
+/* wrapper */
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	min-height: 100vh;
+	overflow: hidden;
+}
+
+/* container */
+.container {
+	width: 100%;
+	max-width: 1350px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+/* none */
+.none {
+	display: none;
+}
