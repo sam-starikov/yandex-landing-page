@@ -1,10 +1,7 @@
 body {
 	font-family: 'YS Text', sans-serif;
 	font-weight: 500;
-	font-size: 24px;
-	background-image: url('img/og.png');
-	background-repeat: no-repeat;
-	background-size: cover;
+	font-size: $main;
 }
 
 a {
@@ -33,7 +30,7 @@ a {
 /* container */
 .container {
 	width: 100%;
-	max-width: 1350px;
+	max-width: 946px;
 	padding: 0 15px;
 	margin: 0 auto;
 }
@@ -41,4 +38,19 @@ a {
 /* none */
 .none {
 	display: none;
+}
+
+.btn {
+	width: 100%;
+	max-width: 318px;
+	height: 65px;
+	padding: 24px 48px;
+	text-align: center;
+	color: $text;
+	font-size: $main;
+	font-weight: 500;
+	line-height: 0.91; /* 91.667% */
+	border-radius: 36px;
+	background: $yellow;
+	box-shadow: 0px 4px 98px 0px rgba(255, 222, 64, 0.59);
 }
