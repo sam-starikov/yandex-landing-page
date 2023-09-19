@@ -30,9 +30,13 @@ a {
 /* container */
 .container {
 	width: 100%;
-	max-width: 946px;
+	max-width: 950px;
 	padding: 0 15px;
 	margin: 0 auto;
+
+	@media (max-width: 375px) {
+		padding: 0 30px;
+	}
 }
 
 /* none */
