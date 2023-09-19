@@ -1,0 +1,31 @@
+.benefits {
+}
+.benefits__container {
+}
+.container {
+}
+.benefits__title {
+	color: $text;
+	font-size: 56px;
+	font-weight: 900;
+	line-height: 1; /* 56px */
+	letter-spacing: -1.12px;
+}
+.benefits__grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 112px;
+	row-gap: 61px;
+	padding: 48px 0;
+}
+.benefits__item-grid {
+}
+.benefits__icon {
+	margin-bottom: 16px;
+}
+.benefits__description {
+	color: $text;
+
+	font-weight: 500;
+	line-height: 1.2; /* 28.8px */
+}
