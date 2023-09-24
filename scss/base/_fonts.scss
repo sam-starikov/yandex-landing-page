@@ -18,3 +18,41 @@
 		url('https://yastatic.net/s3/home/fonts/ys/4/text-regular.woff');
 	font-weight: 400;
 }
+
+/* --font-size-- */
+
+.title-1 {
+	color: #21201f;
+
+	font-weight: 900;
+	line-height: 1; /* 72px */
+	letter-spacing: -1.44px;
+
+	@media (min-width: 1440px) {
+		font-size: 72px;
+	}
+}
+
+.title-2 {
+	color: #21201f;
+
+	font-weight: 900;
+	line-height: 1; /* 56px */
+	letter-spacing: -1.12px;
+
+	@media (min-width: 1440px) {
+		font-size: 56px;
+	}
+}
+
+.title-3 {
+	color: #21201f;
+	font-size: calc(32px + 16 * (100vw - 320px) / 1120);
+	font-weight: 900;
+	line-height: 1; /* 48px */
+	letter-spacing: -0.96px;
+
+	@media (min-width: 1440px) {
+		font-size: 48px;
+	}
+}

@@ -1,0 +1,32 @@
+.info {
+}
+.info__container {
+}
+
+.info__body {
+	display: flex;
+	flex-direction: column;
+}
+.info__title {
+	font-size: 48px;
+	font-weight: 900;
+	line-height: 1; /* 48px */
+	letter-spacing: -0.96px;
+	margin-bottom: 48px;
+}
+.info__description {
+	max-width: 442px;
+	font-weight: 500;
+	line-height: 1.2; /* 28.8px */
+	margin-bottom: 69px;
+}
+.info__gallery {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.info__item-gallery {
+	&:nth-child(2),
+	&:nth-child(4) {
+		transform: translateY(-69px);
+	}
+}
