@@ -44,7 +44,6 @@ a {
 
 .btn {
 	display: inline-block;
-
 	max-width: 318px;
 	width: 100%;
 	min-height: 49px;
@@ -62,7 +61,6 @@ a {
 
 	@media (max-width: 581px) {
 		padding: 18px 0px;
-		max-width: none;
 		line-height: 1.22;
 	}
 }

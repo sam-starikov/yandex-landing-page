@@ -1,10 +1,13 @@
+/* SETTINGS */
 @import './base/reset';
-@import './base/fonts';
 @import './base/vars';
+@import './base/fonts';
 @import './base/base';
 
+/* BLOCKS */
 @import './blocks/header';
-@import './blocks/main';
+@import './blocks/content';
 @import './blocks/benefits';
 @import './blocks/info';
 @import './blocks/abonnement';
+@import './blocks/footer';

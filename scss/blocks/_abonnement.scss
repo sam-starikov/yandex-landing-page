@@ -30,11 +30,6 @@
 }
 
 .abonnement__description {
-	font-size: calc(16px + 8 * (100vw - 320px) / 1120);
-
-	@media (min-width: 1441px) {
-		font-size: $main;
-	}
 }
 
 .abonnement__img-box {
@@ -68,11 +63,6 @@
 	.abonnement__typography {
 		gap: 32px;
 	}
-	.abonnement__btn {
-	}
-}
-
-@media (max-width: 426px) {
 	.abonnement__img-box {
 		&:last-child {
 			display: none;
