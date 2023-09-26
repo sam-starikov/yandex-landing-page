@@ -55,7 +55,6 @@
 .header__info {
 	position: relative;
 	width: 50%;
-	max-width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -104,11 +103,11 @@
 	.header__sub-title {
 		margin-bottom: 35px;
 	}
+	.header__btn {
+		bottom: 32px;
+		position: fixed;
+		align-self: center;
+	}
 }
 
 // 375 //
-
-@media (max-width: 375px) {
-	.header__btn {
-	}
-}

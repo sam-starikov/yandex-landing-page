@@ -58,6 +58,12 @@ a {
 	font-size: $main;
 	font-weight: 500;
 	line-height: 0.91;
+	transition: opacity 0.4s, visibility 0.4s;
+
+	&.none {
+		visibility: hidden;
+		opacity: 0;
+	}
 
 	@media (max-width: 581px) {
 		padding: 18px 0px;
