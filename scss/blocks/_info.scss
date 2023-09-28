@@ -15,6 +15,7 @@
 .info__gallery {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	z-index: -1;
 }
 
 .info__item-gallery {

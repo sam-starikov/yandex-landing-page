@@ -1,26 +1,18 @@
-._header-bg {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: url(../../img/bgHeader.png) no-repeat bottom right / contain,
-		url(../../img/header-shadow.png) no-repeat bottom right / contain;
-
-	@media (max-width: 1024px) {
-		opacity: 0.5;
-	}
-	@media (max-width: 375px) {
-		opacity: 1;
-	}
-}
 .header {
 	position: relative;
-	padding-top: 125px;
-	padding-bottom: 128px;
 	width: 100%;
-	max-width: 100%;
 	height: 804px;
+	padding-top: 125px;
+	padding-bottom: 125px;
+	background: url('../../img/header/scooter.png') no-repeat bottom right /
+		contain;
+
+	@media (max-width: 1025px) {
+		opacity: 0.99;
+	}
+	@media (max-width: 549px) {
+		opacity: 1;
+	}
 
 	&::before {
 		content: '';
@@ -47,17 +39,14 @@
 }
 
 .header__body {
-	position: relative;
-	width: 100%;
-	max-width: 100%;
-	z-index: 10;
+	display: flex;
 }
+
 .header__info {
 	position: relative;
-	width: 50%;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	flex-basis: 50%;
 }
 
 .header__logo {
@@ -81,11 +70,49 @@
 	}
 }
 
+.header__price_curent {
+	padding: 8px 12px;
+	background: radial-gradient(
+		141.42% 141.42% at 100% 0%,
+		#e0b8ff 0%,
+		#b6b9ff 100%
+	);
+}
+
+.header__price_previous {
+	color: #808080;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.2; /* 19.2px */
+}
+
+.header__price {
+	width: 155px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 33px;
+	border-radius: 500px;
+	background: linear-gradient(
+			0deg,
+			rgba(255, 255, 255, 0.63) 0%,
+			rgba(255, 255, 255, 0.63) 100%
+		),
+		radial-gradient(141.42% 141.42% at 100% 0%, #e0b8ff 0%, #b6b9ff 100%);
+}
+
 /* media */
 
 // 768 //
 
 @media (max-width: 768px) {
+	.header {
+		padding-top: 62.5px;
+		padding-bottom: 62.5px;
+	}
+	.header__info {
+		flex-basis: auto;
+	}
 	.header__logo {
 		margin-bottom: 32px;
 	}
@@ -97,8 +124,12 @@
 // 581 //
 
 @media (max-width: 581px) {
-	.header__info {
-		width: 100%;
+	.header {
+		padding-top: 32px;
+		padding-bottom: 0;
+	}
+	.header__body {
+		flex-direction: column;
 	}
 	.header__sub-title {
 		margin-bottom: 35px;
@@ -110,4 +141,10 @@
 	}
 }
 
-// 375 //
+//426
+
+@media (max-width: 426px) {
+	.header {
+		height: 636px;
+	}
+}

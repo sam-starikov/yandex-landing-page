@@ -5,15 +5,8 @@ body {
 }
 
 a {
-	// color: $grayscale-00;
-	// font-size: $B1_Medium_16;
-	font-weight: 500;
+	color: $text;
 	cursor: pointer;
-
-	&:active,
-	:focus {
-		// color: $grayscale-07;
-	}
 }
 
 /* wrapper */
@@ -55,18 +48,34 @@ a {
 
 	text-align: center;
 	color: $text;
-	font-size: $main;
+	font-size: calc(18px + 4 * (100vw - 376px) / 1120);
 	font-weight: 500;
 	line-height: 0.91;
-	transition: opacity 0.4s, visibility 0.4s;
+
+	transition: filter 0.4s, visibility 0.4s, transform 0.4s, filter 0.4s,
+		box-shadow 0.4s;
+
+	&:hover,
+	&:focus {
+		transform: scale(1.2);
+		filter: saturate(150%) contrast(110%);
+		box-shadow: 0px 4px 98px 0px rgb(255, 223, 64);
+	}
+	&:active {
+		background-color: rgb(255, 172, 64);
+		transform: scale(0.5);
+	}
 
 	&.none {
 		visibility: hidden;
-		opacity: 0;
+		filter: opacity(0); // for better performance
 	}
 
 	@media (max-width: 581px) {
 		padding: 18px 0px;
 		line-height: 1.22;
+	}
+	@media (min-width: 1440px) {
+		font-size: 24px;
 	}
 }

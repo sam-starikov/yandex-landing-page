@@ -10,5 +10,12 @@
 }
 
 .footer__link {
+	color: #c5c5c5;
 	text-decoration-line: underline;
+	transition: all 0.4s;
+
+	&:hover,
+	&:focus {
+		color: $text;
+	}
 }
